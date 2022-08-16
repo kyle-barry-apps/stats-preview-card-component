@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+
+:root {
+  --dark-blue: hsl(233, 47%, 7%);
+  --soft-violet: hsl(277, 64%, 61%);
+  --ff-primary: Inter;
+  --ff-alt: Lexend Deca;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff-primary);
+  background-color: var(--dark-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  height: 225px;
+  width: 580px;
+  display: flex;
+}
+
+/* Left item styling */
+
+.left-item {
+  width: 50%;
+  background-color: rgba(74, 67, 120, 0.2);
+  border-radius: 5px 0px 0px 5px;
+  display: flex;
+  flex-direction: column;
+  padding: 37px;
+}
+
+.left-item p {
+  margin-top: 16px;
+  font-size: 7px;
+  line-height: 1.6;
+  color: hsla(0, 0%, 100%, 0.75);
+  max-width: 180px;
+}
+
+.title {
+  color: white;
+  font-size: 15px;
+  line-height: 1.25;
+}
+
+.stats-container {
+  display: flex;
+  color: white;
+  padding-top: 35px;
+}
+
+.number {
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.number-desc {
+  padding-top: 3px;
+  font-size: 6px;
+  text-transform: uppercase;
+  color: hsla(0, 0%, 100%, 0.6);
+  letter-spacing: 1px;
+}
+
+.number-container {
+  padding-right: 35px;
+}
+
+/* Right item styling */
+
+.right-item {
+  object-fit: cover;
+  overflow: hidden;
+  width: 50%;
+  position: relative;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.right-item::after {
+  content: '';
+  display: block;
+  position: absolute;
+  background-color: var(--soft-violet);
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  mix-blend-mode: multiply;
+}
+
+.img {
+  height: 100%;
+  width: 100%;
+}
+
+
+
+
