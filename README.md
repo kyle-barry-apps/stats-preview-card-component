@@ -1,3 +1,5 @@
+Live component: https://kyle-barry-apps.github.io/stats-preview-card-component/
+
 # Frontend Mentor - Stats preview card component
 
 ![Design preview for the Stats preview card component coding challenge](./design/desktop-preview.jpg)
